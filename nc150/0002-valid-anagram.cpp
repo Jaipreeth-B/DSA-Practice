@@ -58,7 +58,7 @@ int main()
     cin >> t;
     while(t--)
     {
-        cout << "Hello World"  << el;
+        
     }
     return 0;
 }
