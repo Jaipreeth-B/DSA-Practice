@@ -45,10 +45,14 @@ const ld PI = acos(-1.0);
 #define rep(i,a,b) for (auto i=(a); i<(b); i++)
 #define rrep(i,a,b) for (auto i=(a); i>=(b); i--)
 
-class Solution
-{
+class Solution {
 public:
-    
+    bool isAnagram(string s, string t) {
+        sort(s.begin() , s.end());
+        sort(t.begin() , t.end());
+        if(s == t) return true;
+        return false;
+    }
 };
 
 int main()
@@ -58,7 +62,10 @@ int main()
     cin >> t;
     while(t--)
     {
-        
+        Solution sol;
+        bool ans = sol.isAnagram("ball" , "alb");
+        bool ans = sol.isAnagram("ball" , "allb");
+        ans ? cout << "Valid\n" : cout << "InValid\n";
     }
     return 0;
 }
