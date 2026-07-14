@@ -133,7 +133,7 @@ int main()
         {
             int data;
             cin >> data;
-            sol.insertEle(data);
+            sol.insertEle(data);    
         }
         int ans = sol.convert(n,k);
         cout << ans << el;
